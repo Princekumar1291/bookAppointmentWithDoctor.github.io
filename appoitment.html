@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navBar">
+                <ol>
+                    <li>
+                        <img src="logo.png" alt="" id="logo">
+                    </li>
+                    <li>
+                    <li class="midNav"><a href="index.html">HOME</a></li>
+                    <li class="midNav">SERVICE</li>
+                    <li class="midNav">ABOUT</li>
+                    <li class="midNav">CONTACT</li>
+                    </li>
+                    <li>
+                        <button id="button">Helpline</button>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+    </div>
+    <div>
+        <div class="main">
+            <div class="appoitment">
+                <h2>Book Your Appointment Here</h2>
+                <form id="appoitment" method="post">
+                    <label>Name : </label>
+                    <br>
+                    <input type="text" name="yname" id="name" placeholder="Enter Your Name" required>
+                    <br><br>
+                    <label>Age : </label>
+                    <br>
+                    <input type="number" name="age" id="name" placeholder="Enter Your Age" required>
+                    <br><br>
+                    <label>Contact Number : </label>
+                    <br>
+                    <input type="number" name="cn" id="name" placeholder="Enter Your Contact Numb" required>
+                    <br><br>
+                    <label>Email : </label>
+                    <br>
+                    <input type="email" name="email" id="name" placeholder="Enter Your Valid Email" required>
+                    <br><br>
+                    <label>Gender : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="male" required>
+                    &nbsp;
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="female" required>
+                    &nbsp;
+                    <span id="male">Female</span>
+                    <br><br>
+                    <label for="appointmentDate">Appointment Date:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    <br>
+                    <label for="appointmentTime">Appointment Time:</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                    <br><br>
+                    <label for="doctor">Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="Dr. Rajiv Mohan">Dr. Rajiv Mohan</option>
+                        <option value="Dr. Sarbjit Singh">Dr. Sarbjit Singh</option>
+                        <option value="Dr. Arun Saroha">Dr. Arun Saroha</option>
+                    </select>
+                    <br><br>
+                    <div class="btn">
+                        <button>Schedule Appointment</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
